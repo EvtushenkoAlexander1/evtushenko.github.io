@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+use {
+  text-transform: uppercase;
+  fill: none;
+  stroke-width: 4;
+  letter-spacing: 4px;
+  font: 100px Open Sans, Impact;
+  -webkit-animation: dash 10s linear infinite;
+          animation: dash 10s linear infinite;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: -100%;
+  }
+  to {
+    stroke-dashoffset: 0%;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: -100%;
+  }
+  to {
+    stroke-dashoffset: 0%;
+  }
+}
+
+body
+a {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  transition: .5s;
+}
+a:hover {background-position: right center;}

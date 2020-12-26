@@ -1,0 +1,20 @@
+body {
+  background: floralwhite;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 2px 3px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+  color: black;
+  transition: .2s ease-in-out;
+}
+

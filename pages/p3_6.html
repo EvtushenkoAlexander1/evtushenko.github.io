@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"
+<head="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../static/css/styleP3_1.css" type="text/css">
+
+    <link rel="shortcut icon" href="http://tagashev-ist22.tk/images/favicon.ico" type="image/x-icon">
+    <style></style>
+    <title>0:10:15</title></head>
+
+<body onload="start(document.forms[0])" onunload="cleartids()">
+
+<script language="JavaScript">
+    timestr = "00:00:00";
+    tid = 0;
+    pause = 0;
+    var to;
+    var bcount;
+    var tcount;
+
+    function writer() {
+        document.write("test");
+    }
+
+    function time(n) {
+        tid = window.setTimeout("time(1)", to);
+        today = new Date()
+        if (today.getMinutes() < 10) {
+            pad = "0"
+        } else
+            pad = "";
+        if (today.getSeconds() < 10) {
+            pads = "0"
+        } else
+            pads = "";
+        timestr = today.getHours() + ":" + pad + today.getMinutes() + ":" + pads + today.getSeconds();
+        document.title = timestr;
+        window.clearTimeout(tid);
+        tid = window.setTimeout("time()", to);
+    }
+
+    function start(x) {
+        f = x;
+        to = 60;
+        time(x);
+    }
+
+    function cleartids() {
+        window.clearTimeout(tid);
+    }
+</script>
+
+
+<br><br>
+<center><p><font size="5" color="black" face="Times New Roman">Тут ничего нет, смотри выше!</font></p> <br>
+    <a href="javascript:history.back()" title="Вернуться на предыдущую страницу"> Вернуться назад </a></center>
+</body></html>

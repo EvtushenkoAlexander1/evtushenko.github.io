@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"
+<head="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Лабораторная работа №3</title>
+    <link rel="stylesheet" href="../static/css/styleP3_1.css" type="text/css">
+
+    <style></style>
+</head>
+
+<body>
+<center>
+    <font size="5" color="black" face="Times New Roman">
+        <br>
+        <h1> Удалить в предложении все цифры. Вывести результат в новом окне. </h1> <br>
+        <textarea name="comment" id="inputForm" cols="40" rows="3"></textarea> <br><br></font>
+    <a class="button" id="knopka3">Выполнить действие
+    </a><a href="javascript:history.back()" title="Вернуться на предыдущую страницу"> Вернуться назад </a>
+</center>
+<script>
+    function displayOnNewWindow(text) {
+        let newWin = window.open("about:blank", "hello", "width=300,height=600");
+        newWin.document.write(text);
+    }
+
+    knopka3.onclick = function () {
+        textWithoutNumbers = inputForm.value.split(/[0-9]/).join('');
+        displayOnNewWindow(textWithoutNumbers);
+    }
+</script>
+</body></html>

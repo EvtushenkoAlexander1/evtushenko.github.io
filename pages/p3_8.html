@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"
+<head="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Лабораторная работа №3</title>
+    <link rel="stylesheet" href="../static/css/styleP3_1.css" type="text/css">
+
+    <style></style>
+</head>
+
+<body>
+<center>
+    <br><br><br>
+    <font size="5" color="black" face="Times New Roman"><h1>Калькулятор</h1><br>
+    </font>
+    <div><font size="5" color="black" face="Times New Roman">
+        <input id="calc_input" placeholder="Ввод чисел"><br>
+        <input id="calc_result" readonly=""><br></font><br>
+        <a id="calc_submit">Выполнить действие
+        </a><a href="javascript:history.back()" title="Вернуться на предыдущую страницу"> Вернуться назад </a>
+    </div>
+
+</center>
+<script>
+    calc_submit.onclick = () => {
+        calc_result.value = `=${eval(calc_input.value)}`
+    }
+</script>
+
+</body></html>

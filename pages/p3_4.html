@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en"
+<head="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Лабораторная работа №3</title>
+    <link rel="stylesheet" href="../static/css/styleP3_1.css" type="text/css">
+
+    <style></style>
+</head>
+
+<body>
+<center><br><br>
+    <font size="5" color="black" face="Times New Roman">
+        <div class="colorPicker">
+            <label for="exampleColorInput" class="form-label">Выбрать цвет:</label>
+            <input type="color" class="form-control form-control-color" id="exampleColorInput" title="Выберите ваш цвет"
+                   value="#20c997">
+        </div>
+    </font><br>
+    <a class="button" id="knopka4">Выполнить действие
+    </a><a href="javascript:history.back()" title="Вернуться на предыдущую страницу"> Вернуться назад </a>
+</center>
+<script>
+    knopka4.onclick = function () {
+
+        document.body.style.background = exampleColorInput.value;
+
+    }
+</script>
+</body></html>

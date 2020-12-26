@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"
+<head="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Лабораторная работа №3</title>
+    <link rel="stylesheet" href="../static/css/styleP3_1.css" type="text/css">
+
+    <style></style>
+</head>
+
+<body>
+<center>
+    <font size="5" color="black" face="Times NEw Roman">
+        <br>Вывести текущую дату в новом окне, нажав на кнопку<br><br></font>
+    <a class="button" id="knopka5">Показать текущую дату
+    </a><a href="javascript:history.back()" title="Вернуться на предыдущую страницу"> Вернуться назад </a>
+    <br>
+</center>
+<script>
+    function displayOnNewWindow(text) {
+        let newWin = window.open("about:blank", "hello", "width=300,height=600");
+        newWin.document.write(text);
+    }
+
+    knopka5.onclick = function () {
+        const now = new Date()
+        displayOnNewWindow(`${zfill2(now.getDate())}.${zfill2(now.getMonth())}.${now.getFullYear()}, ${format_time(now)}`)
+    }
+
+    function zfill2(object) {
+        return object.toString().padStart(2, '0')
+    }
+
+    function format_time(date) {
+        return `${zfill2(date.getHours())}:${zfill2(date.getMinutes())}:${zfill2(date.getSeconds())}`
+    }
+</script>
+
+</body></html>

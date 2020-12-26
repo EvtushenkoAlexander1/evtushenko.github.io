@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"
+<head="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Лабораторная работа №3</title>
+    <link rel="stylesheet" href="../static/css/styleP3_1.css" type="text/css">
+
+<body>
+<center>
+    <font size="5" color="black" face="Times New Roman">
+        <br>
+        <h1> Удалить все слова, состоящие более чем из 5 букв.</h1><br>
+        <textarea name="comment" id="inputForm" cols="40" rows="3"></textarea> <br><br>
+        <a href="http://tagashev-ist22.tk/laba3/1.html" id="knopka1">Выполнить действие
+        </a><a href="javascript:history.back()" title="Вернуться на предыдущую страницу"> Вернуться назад </a>
+    </font>
+</center>
+<script>
+    function displayOnNewWindow(text) {
+        let newWin = window.open("about:blank", "hello", "width=300,height=600");
+        newWin.document.write(text);
+    }
+
+    knopka1.onclick = function () {
+        words = inputForm.value.split(' ').filter(word => word.length <= 5);
+        displayOnNewWindow(words);
+    }
+</script>
+</body></html>
