@@ -1,0 +1,26 @@
+body {
+    margin: 0px;
+    background: url(http://web-esse.ru/wp-content/uploads/2015/12/wpt87.jpg) left top repeat;
+    font-family: 'Caveat', cursive;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    place-content: center;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+input, textarea {
+    margin: 2%;
+}
+
+.header {
+    text-align: center;
+    background-color: indianred;
+    color: whitesmoke;
+    font-size: 50px;
+}
